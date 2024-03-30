@@ -1,0 +1,49 @@
+Manifest-Version: 1.0
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.html, http
+ s://www.gnu.org/licenses/gpl-2.0.txt, https://www.mozilla.org/en-US/M
+ PL/2.0/
+Bundle-SymbolicName: com.rabbitmq.client
+Built-By: root
+Bnd-LastModified: 1617950671361
+Specification-Title: AMQP
+Bundle-DocURL: https://www.rabbitmq.com
+Import-Package: com.codahale.metrics;version="[4.1,5)";resolution:=opt
+ ional,com.fasterxml.jackson.core;version="[2.12,3)";resolution:=optio
+ nal,com.fasterxml.jackson.databind;version="[2.12,3)";resolution:=opt
+ ional,com.fasterxml.jackson.databind.node;version="[2.12,3)";resoluti
+ on:=optional,com.rabbitmq.client,com.rabbitmq.client.impl,com.rabbitm
+ q.client.impl.nio,com.rabbitmq.client.impl.recovery,com.rabbitmq.tool
+ s.json,com.rabbitmq.utility,io.micrometer.core.instrument;resolution:
+ =optional,javax.naming,javax.naming.directory,javax.net,javax.net.ssl
+ ,javax.security.auth.callback,javax.security.sasl,org.slf4j;version="
+ [1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Export-Package: com.rabbitmq.client;uses:="com.rabbitmq.client.impl,co
+ m.rabbitmq.client.impl.nio,com.rabbitmq.client.impl.recovery,com.rabb
+ itmq.utility,javax.net,javax.net.ssl";version="5.12.0",com.rabbitmq.c
+ lient.impl;uses:="com.codahale.metrics,com.rabbitmq.client,com.rabbit
+ mq.client.impl.recovery,com.rabbitmq.utility,io.micrometer.core.instr
+ ument,javax.net,javax.net.ssl";version="5.12.0",com.rabbitmq.client.i
+ mpl.nio;uses:="com.rabbitmq.client,com.rabbitmq.client.impl,javax.net
+ .ssl";version="5.12.0",com.rabbitmq.client.impl.recovery;uses:="com.r
+ abbitmq.client,com.rabbitmq.client.impl";version="5.12.0",com.rabbitm
+ q.tools.json;version="5.12.0",com.rabbitmq.tools.jsonrpc;uses:="com.f
+ asterxml.jackson.core,com.fasterxml.jackson.databind,com.rabbitmq.cli
+ ent";version="5.12.0",com.rabbitmq.utility;version="5.12.0"
+Bundle-Name: RabbitMQ Java Client
+Bundle-Description: The RabbitMQ Java client library allows Java appli
+ cations to interface with RabbitMQ.
+Implementation-Title: RabbitMQ Java Client
+Automatic-Module-Name: com.rabbitmq.client
+Implementation-Version: 5.12.0
+Bundle-ManifestVersion: 2
+Specification-Vendor: AMQP Working Group (www.amqp.org)
+Bundle-Vendor: VMware, Inc. or its affiliates.
+Tool: Bnd-3.2.0.201605172007
+Implementation-Vendor: VMware, Inc. or its affiliates.
+Bundle-Version: 5.12.0
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_282
+Implementation-URL: https://www.rabbitmq.com
+Specification-Version: 0.9.1
+
